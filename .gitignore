@@ -2,7 +2,6 @@
 *.tfplan
 *.tfstate
 *.lock.info
-*.pem
 *.terraform
 *.tfstate.backup
 *.tmp
@@ -10,5 +9,4 @@
 *.hcl
 .terraform
 *.json
-*.pub
-.ssh_keys
+ssh_keys/
