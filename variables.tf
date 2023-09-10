@@ -23,7 +23,7 @@ variable "zone" {
 
 // Network Variables
 
-variable "questrade_network" {
+variable "vpc_name" {
   type = string
   description = "Custom VPC network"
   default = "questrade-net"
@@ -54,6 +54,11 @@ variable "instance_image" {
   default = "ubuntu-os-cloud/ubuntu-2204-lts"
 }
 
+variable "instance_name" {
+  type = string
+  description = "Virtual machine instance name"
+  default = "questrade-server"
+}
 // SSH Credentials
 
 variable "ssh_user" {
