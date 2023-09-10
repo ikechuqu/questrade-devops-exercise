@@ -23,6 +23,9 @@ You will need the following prerequisites before using this terraform configurat
 - **`outputs.tf:`** Defines the Terraform outputs, including the external IP address of the provisioned virtual machine instance.
 
 - **`locals.:`** Defines local variables used within the configuration, including instance tags.
+
+- **`variables.tf:`** Defines the input variables used in the configuration, such as project details, networking information, instance details, and SSH credentials.
+
 ## Deployment
 
 **To deploy this project:**
