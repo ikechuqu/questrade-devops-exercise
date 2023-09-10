@@ -1,0 +1,14 @@
+*.tfvars
+*.tfplan
+*.tfstate
+*.lock.info
+*.pem
+*.terraform
+*.tfstate.backup
+*.tmp
+.DS_Store
+*.hcl
+.terraform
+*.json
+*.pub
+.ssh_keys
