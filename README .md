@@ -50,7 +50,7 @@ ssh_key           = "path/to/your/ssh-public-key.pub"
 terraform init
 ```
 
-*4. Validate, Plan and Apply:
+*4. Validate, Plan and Apply:*
 ```bash
 terraform validate
 
