@@ -4,9 +4,7 @@
 *.lock.info
 *.terraform
 *.tfstate.backup
-*.tmp
-.DS_Store
 *.hcl
 .terraform
 *.json
-ssh_keys/
+ssh_keys/*
