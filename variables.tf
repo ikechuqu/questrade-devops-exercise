@@ -1,73 +1,75 @@
 // Provider Variables
 
 variable "credentials" {
-  type = string
+  type        = string
   description = "GCP service account credentials file path"
-  sensitive = true
+  sensitive   = true
 }
 
 variable "project-id" {
-  type = string
+  type        = string
   description = "GCP project id"
 }
 
 variable "region" {
-  type = string
+  type        = string
   description = "Resource deployment region"
 }
 
 variable "zone" {
-  type = string
+  type        = string
   description = "Resource deployment zone"
 }
 
 // Network Variables
 
 variable "vpc_name" {
-  type = string
+  type        = string
   description = "Custom VPC network"
-  default = "questrade-net"
+  default     = "questrade-net"
 }
 
-variable "subnet_name" {
-  type = string
-  description = "VPC subnet name"
-  default = "questrade-subnet"
-}
-
-variable "subnet_cidr_range" {
-  type = string
-  description = "IP cidr range for subnet"
+variable "subnets" {
+  type = list(object({
+    subnet_name   = string
+    subnet_ip     = string
+    subnet_region = string
+  }))
+  default = [{
+    subnet_name   = ""
+    subnet_ip     = ""
+    subnet_region = ""
+  }]
 }
 
 // Virtual Machine
 
 variable "instance_type" {
-  type = string
+  type        = string
   description = "Virtual machine instance type"
-  default = "n2-standard-2"
+  default     = "n2-standard-2"
 }
 
 variable "instance_image" {
-  type = string
+  type        = string
   description = "Virtual machine instance image"
-  default = "ubuntu-os-cloud/ubuntu-2204-lts"
+  default     = "ubuntu-os-cloud/ubuntu-2204-lts"
 }
 
 variable "instance_name" {
-  type = string
+  type        = string
   description = "Virtual machine instance name"
-  default = "questrade-server"
+  default     = "questrade-server"
 }
 // SSH Credentials
 
 variable "ssh_user" {
-  type = string
+  type        = string
   description = "SSH username"
 }
 
 variable "ssh_key" {
-  type = string
+  type        = string
   description = "SSH public key file path"
-  sensitive = true
+  sensitive   = true
 }
