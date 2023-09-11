@@ -58,7 +58,7 @@ terraform apply
 *Fix any errors from the validation run, review the plan, confirm the proposed changes, and Terrform will provision the resources on GCP.*
 
 *5. Access the Instance:*
-After the apply is complete, access the virtual machine instance to using SSH. Use the external IP address displayed in the Terraform out:
+After the apply is complete, access the virtual machine instance using SSH. Use the external IP address displayed in the Terraform output:
 ```bash
 ssh -i /path/to/your/ssh-private-key.pem <ssh_user>@<external_ip>
 ```
