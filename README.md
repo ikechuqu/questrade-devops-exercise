@@ -23,9 +23,6 @@ You will need the following prerequisites before using this terraform configurat
 - **`outputs.tf:`** Defines the Terraform outputs, including the external IP address of the provisioned virtual machine instance.
 
 - **`locals.:`** Defines local variables used within the configuration, including instance tags.
-
-- **`variables.tf:`** Defines the input variables used in the configuration, such as project details, networking information, instance details, and SSH credentials.
-
 ## Deployment
 
 **To deploy this project:**
@@ -50,7 +47,7 @@ ssh_key           = "path/to/your/ssh-public-key.pub"
 terraform init
 ```
 
-*4. Validate, Plan and Apply:*
+*4. Validate, Plan and Apply:
 ```bash
 terraform validate
 
@@ -74,7 +71,17 @@ terraform destroy
 Confirm the destruction of resources.
 ## Screenshots
 
-![Questrade_exercise_vpc_subnet_vm_firewall_rule](https://github.com/ikechuqu/questrade-devops-exercise/assets/28604664/efe93ade-6ff6-482b-8882-9647da19adcb)
+## vpc
+![custom_vpc](https://github.com/ikechuqu/questrade-devops-exercise/assets/28604664/7ad2ba6d-6fd3-4c86-b3d9-ab2882dbd7a9)
+
+## subnet
+![subnet](https://github.com/ikechuqu/questrade-devops-exercise/assets/28604664/93e384a7-0db7-4c86-b375-372a3b17205c)
+
+## virtual machine instance
+![vm_instance](https://github.com/ikechuqu/questrade-devops-exercise/assets/28604664/13635c1b-591b-453e-9d8f-855c9702338b)
+
+## firewall rule
+![firewall_rule](https://github.com/ikechuqu/questrade-devops-exercise/assets/28604664/67ed867a-35d3-4767-9e9c-3af20aa55dfb)
 
 ## Authors
 
